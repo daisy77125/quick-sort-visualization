@@ -1,3 +1,50 @@
 #the_array > div {
   border: 1px solid black;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#the_holder > div,
+#the_holder2 > div {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.zoom {
+  animation-name: zoom;
+  animation-duration: 1s;
+}
+
+.outline-pink {
+  outline: 10px solid pink;
+}
+
+.outline-sky {
+  outline: 10px solid skyblue;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
